@@ -4,6 +4,7 @@ import { App } from './app/app';
 import { provideAuth0 } from '@auth0/auth0-angular';
 import { mergeApplicationConfig } from '@angular/core';
 import { environment } from './environments/environment.js';
+import { AppComponent } from './app/app.component.js';
 
 const auth0Config = mergeApplicationConfig(appConfig, {
   providers: [
@@ -17,5 +18,5 @@ const auth0Config = mergeApplicationConfig(appConfig, {
   ]
 });
 
-bootstrapApplication(App, auth0Config)
+bootstrapApplication(AppComponent, auth0Config)
   .catch((err) => console.error(err));
