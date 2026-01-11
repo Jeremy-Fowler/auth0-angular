@@ -7,7 +7,7 @@ import { AuthService } from '@auth0/auth0-angular';
   template: `
     <button
       (click)="logout()"
-      class="button logout"
+      class="button logout pill"
     >
       Log Out
     </button>
