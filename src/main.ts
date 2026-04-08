@@ -4,6 +4,8 @@ import { App } from './app/app';
 import { provideAuth0 } from '@auth0/auth0-angular';
 import { mergeApplicationConfig } from '@angular/core';
 import { environment } from './environments/environment.js';
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+
 
 const auth0Config = mergeApplicationConfig(appConfig, {
   providers: [
